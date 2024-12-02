@@ -1,0 +1,117 @@
+/* 全体スタイル */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* グリッドレイアウト */
+#sliders {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+/* スライダーを横並びにするためのフレックスボックス */
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.label-left, .label-right {
+    font-size: 14px;
+    color: #333;
+}
+
+input[type="range"] {
+    flex-grow: 1;
+    margin: 0 10px;
+}
+
+/* 提案されたフォントリストの項目全体のスタイル */
+ul#font-list li {
+    list-style: none;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* フォント名 */
+ul#font-list li span {
+    font-family: inherit;
+    margin-bottom: 10px;
+}
+
+/* テキストボックスとラベルの配置 */
+.input-container {
+    margin-bottom: 10px;
+}
+
+/* テキストボックスの上のラベル */
+.test-label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* テキストボックス */
+ul#font-list li input {
+    padding: 8px;
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* 試し打ち結果のコンテナ */
+.output-container {
+    margin-top: 5px;
+}
+
+/* 試し打ち結果のラベル */
+.result-label {
+    font-size: 14px;
+    color: #333;
+    margin-right: 5px;
+}
+
+/* 試し打ち結果のテキスト */
+.result-text {
+    font-family: inherit;
+    font-size: 20px;
+    color: #333;
+    display: block;
+    margin-top: 5px;
+}

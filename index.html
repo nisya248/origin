@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>フォント提案ツール</title>
+    <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=M+PLUS+1p:wght@400;700&family=Kosugi+Maru&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>フォント提案ツール</h1>
+    </header>
+    
+    <main>
+        <!-- 媒体の選択 -->
+        <section>
+            <h2>媒体を選択してください</h2>
+            <select id="medium">
+                <option value="web">ウェブサイト</option>
+                <option value="print">印刷物</option>
+                <option value="app">アプリケーション</option>
+            </select>
+        </section>
+
+        <section>
+            <h2>デザインイメージを選んでください</h2>
+            <!-- 12個のスライダーを追加 -->
+            <div id="sliders">
+                <!-- スライダー1 -->
+                <div>
+                    <div class="slider-container">
+                        <span class="label-left">シンプル</span>
+                        <input type="range" id="slider1" min="1" max="10" value="5">
+                        <span class="label-right">複雑</span>
+                    </div>
+                    <p>現在の値: <span id="slider1-value">5</span></p>
+                </div>
+
+                <!-- スライダー2 -->
+                <div>
+                    <div class="slider-container">
+                        <span class="label-left">シンプル</span>
+                        <input type="range" id="slider2" min="1" max="10" value="5">
+                        <span class="label-right">複雑</span>
+                    </div>
+                    <p>現在の値: <span id="slider2-value">5</span></p>
+                </div>
+
+                <!-- スライダー3 -->
+                <div>
+                    <div class="slider-container">
+                        <span class="label-left">シンプル</span>
+                        <input type="range" id="slider3" min="1" max="10" value="5">
+                        <span class="label-right">複雑</span>
+                    </div>
+                    <p>現在の値: <span id="slider3-value">5</span></p>
+                </div>
+
+                <!-- 残りのスライダーも同様に一意のIDを設定 -->
+                <div>
+                    <div class="slider-container">
+                        <span class="label-left">シンプル</span>
+                        <input type="range" id="slider4" min="1" max="10" value="5">
+                        <span class="label-right">複雑</span>
+                    </div>
+                    <p>現在の値: <span id="slider4-value">5</span></p>
+                </div>
+                <div>
+                    <div class="slider-container">
+                        <span class="label-left">シンプル</span>
+                        <input type="range" id="slider5" min="1" max="10" value="5">
+                        <span class="label-right">複雑</span>
+                    </div>
+                    <p>現在の値: <span id="slider5-value">5</span></p>
+                </div>
+                <div>
+                    <div class="slider-container">
+                        <span class="label-left">シンプル</span>
+                        <input type="range" id="slider6" min="1" max="10" value="5">
+                        <span class="label-right">複雑</span>
+                    </div>
+                    <p>現在の値: <span id="slider6-value">5</span></p>
+                </div>
+                <div>
+                    <div class="slider-container">
+                        <span class="label-left">シンプル</span>
+                        <input type="range" id="slider7" min="1" max="10" value="5">
+                        <span class="label-right">複雑</span>
+                    </div>
+                    <p>現在の値: <span id="slider7-value">5</span></p>
+                </div>
+
+                <div>
+                    <div class="slider-container">
+                        <span class="label-left">シンプル</span>
+                        <input type="range" id="slider8" min="1" max="10" value="5">
+                        <span class="label-right">複雑</span>
+                    </div>
+                    <p>現在の値: <span id="slider8-value">5</span></p>
+                </div>
+                <div>
+                    <div class="slider-container">
+                        <span class="label-left">シンプル</span>
+                        <input type="range" id="slider9" min="1" max="10" value="5">
+                        <span class="label-right">複雑</span>
+                    </div>
+                    <p>現在の値: <span id="slider9-value">5</span></p>
+                </div>
+
+                <div>
+                    <div class="slider-container">
+                        <span class="label-left">シンプル</span>
+                        <input type="range" id="slider10" min="1" max="10" value="5">
+                        <span class="label-right">複雑</span>
+                    </div>
+                    <p>現在の値: <span id="slider10-value">5</span></p>
+                </div>
+
+                <div>
+                    <div class="slider-container">
+                        <span class="label-left">シンプル</span>
+                        <input type="range" id="slider11" min="1" max="10" value="5">
+                        <span class="label-right">複雑</span>
+                    </div>
+                    <p>現在の値: <span id="slider11-value">5</span></p>
+                </div>
+
+                <div>
+                    <div class="slider-container">
+                        <span class="label-left">シンプル</span>
+                        <input type="range" id="slider12" min="1" max="10" value="5">
+                        <span class="label-right">複雑</span>
+                    </div>
+                    <p>現在の値: <span id="slider12-value">5</span></p>
+                </div>
+                <!-- 残りのスライダーも同様に続く... -->
+            </div>
+        </section>
+
+        <section id="font-results">
+            <h2>提案されたフォント</h2>
+            <ul id="font-list">
+                <!-- 提案されたフォントがここに表示されます -->
+            </ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+
+</html>
